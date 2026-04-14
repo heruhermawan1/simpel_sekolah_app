@@ -171,7 +171,7 @@ class _StudentDataPageState extends State<StudentDataPage> {
                       )
                     : ListView.separated(
                         itemCount: _filteredStudents.length,
-                        separatorBuilder: (_, __) => const SizedBox(height: 12),
+                        separatorBuilder: (_, _) => const SizedBox(height: 12),
                         itemBuilder: (context, index) {
                           final student = _filteredStudents[index];
                           return StudentCard(student: student);
